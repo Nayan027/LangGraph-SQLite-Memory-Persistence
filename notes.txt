@@ -6,6 +6,16 @@ retrieve old conversations.
 
 SqliteSaver() - expects a connection object which is provided by sqlite3.
 
+------------------------- CHANGES MADE COMPARED TO RAM-MEMORY-PERSISTENCE-STRATEGY -----------------------------------
 
+* Backend:
+1. checkpointer uses SqliteSaver instead of InMemorySaver
+
+2. a function created to retrieve a list of all unique thread_ids from the database
+
+
+* Frontend:
+1. use the funcn. created in backend in place of an empty list - as it expects a list and the function 
+   returns a list of thread-ids.
 
 Install SQLite viewer in VS-Code to visualize DataBase storage of checkpointers and other stuff such as metadata.
