@@ -1,0 +1,15 @@
+langgraph
+langchain
+langchain-core
+langchain-perplexity
+
+dotenv
+streamlit
+
+
+langgraph-checkpoint-sqlite
+
+
+
+
+# pip install -r requirements.txt

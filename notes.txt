@@ -1,0 +1,11 @@
+InMemorySaver() for persistent memory, but stores in RAM - volatile memory:
+    everything is lost either on switching application off or even on refreshing the app.
+
+Thus, need DataBase so that even after days if application is turned on - memory has previous data to 
+retrieve old conversations.
+
+SqliteSaver() - expects a connection object which is provided by sqlite3.
+
+
+
+Install SQLite viewer in VS-Code to visualize DataBase storage of checkpointers and other stuff such as metadata.
